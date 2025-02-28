@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="/manifest.json">
+    <title>Document</title>
+</head>
+<body>
+  <h1>Ola Robson, Esse é começo do PWA</h1>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+          window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/service-worker.js')
+              .then((registration) => {
+                console.log('Service Worker registrado com sucesso:', registration);
+              })
+              .catch((error) => {
+                console.log('Falha ao registrar o Service Worker:', error);
+              });
+          });
+        }
+      </script>
+</body>
+</html>
