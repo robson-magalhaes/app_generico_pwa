@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="manifest.json">
     <title>Document</title>
 </head>
 <body>
   <h1>Ola Robson, Esse é começo do PWA</h1>
-  <h3>alterado 1</h3>
+  <h3>alterado 2</h3>
 
     <script>
         if ('serviceWorker' in navigator) {
           window.addEventListener('load', () => {
-            navigator.serviceWorker.register('/service-worker.js')
+            navigator.serviceWorker.register('service-worker.js')
               .then((registration) => {
                 console.log('Service Worker registrado com sucesso:', registration);
               })
